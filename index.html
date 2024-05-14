@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Jogo</title>
+  <title>Formulário de Vendas</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .center-div {
@@ -18,6 +18,10 @@
 <div class="center-div">
   <h2 class="text-center">Formulário de Vendas</h2>
   <form>
+    <div class="form-group">
+        <label for="nome">COD da Venda:</label>
+        <input type="text" class="form-control" id="codigo" placeholder="Codigo da venda" required>
+      </div>
     <div class="form-group">
       <label for="nome">Nome do Jogo:</label>
       <input type="text" class="form-control" id="nome" placeholder="Digite o nome do jogo" required>
@@ -36,19 +40,11 @@
     </div>
     <div class="form-group">
       <label for="dlc">Jogo Possui DLC?</label>
-      <select id="dlc" class="form-control" required>
-        <option value="">Selecione...</option>
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
-      </select>
+      <input type="text" class="form-control" id="dlc" placeholder="Jogo Possui DLC?" required>
     </div>
     <div class="form-group">
       <label for="online">Disponível para Jogar Online?</label>
-      <select id="online" class="form-control" required>
-        <option value="">Selecione...</option>
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
-      </select>
+      <input type="text" class="form-control" id="online" placeholder="Disponível para Jogar Online?" required>
     </div>
     <div class="form-group">
       <label for="data_venda">Data de Venda:</label>

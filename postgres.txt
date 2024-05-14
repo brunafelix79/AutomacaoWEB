@@ -1,0 +1,13 @@
+CREATE TABLE vendas_jogos
+(
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    console VARCHAR(50),
+    genero VARCHAR(50),
+    ano_lancamento INTEGER,
+    possui_dlc VARCHAR(10),
+    online VARCHAR(10),
+    data_venda DATE,
+    preco NUMERIC(10,2),
+    quantidade INTEGER
+);
